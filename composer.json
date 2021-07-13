@@ -1,5 +1,5 @@
 {
-    "name": "pm-wobbuffet/laravel-form-components",
+    "name": "protonemedia/laravel-form-components",
     "description": "Blade components to rapidly build forms with Tailwind CSS Custom Forms and Bootstrap 4.",
     "keywords": [
         "protonemedia",
@@ -15,7 +15,7 @@
         "laravel-form-builder",
         "laravel-form-components"
     ],
-    "homepage": "https://github.com/protonemedia/laravel-form-components",
+    "homepage": "https://github.com/pm-wobbuffet/laravel-form-components",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -56,7 +56,7 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": false,
     "extra": {
         "laravel": {
             "providers": [
