@@ -38,6 +38,7 @@ class FormSelect extends Component
         $this->label        = $label;
         $this->options      = $options;
         $this->manyRelation = $manyRelation;
+        $this->placeholder  = $placeholder ?: '';
 
         if ($this->isNotWired()) {
             $inputName = Str::before($name, '[]');
