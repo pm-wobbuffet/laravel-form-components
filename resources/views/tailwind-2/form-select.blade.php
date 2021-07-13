@@ -16,6 +16,9 @@
             {!! $attributes->merge([
                 'class' => ($label ? 'mt-1' : '') . ' block w-full'
             ]) !!}>
+            @if($placeholder !== '')
+                <option value="" disabled selected>{{$placeholder}}</option>
+            @endif
             @forelse($options as $key => $option)
                 <option value="{{ $key }}" @if($isSelected($key)) selected="selected" @endif>
                     {{ $option }}

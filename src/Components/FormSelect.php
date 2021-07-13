@@ -16,6 +16,7 @@ class FormSelect extends Component
     public $options;
     public $selectedKey;
     public bool $multiple;
+    public string $placeholder;
 
     /**
      * Create a new component instance.
@@ -30,7 +31,8 @@ class FormSelect extends Component
         $default = null,
         bool $multiple = false,
         bool $showErrors = true,
-        bool $manyRelation = false
+        bool $manyRelation = false,
+        string $placeholder = ''
     ) {
         $this->name         = $name;
         $this->label        = $label;
