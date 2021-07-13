@@ -18,16 +18,22 @@ class Form extends Component
      */
     public bool $spoofMethod = false;
 
+    public string $enctype = '';
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $method = 'POST')
+    public function __construct(string $method = 'POST', bool $files = false)
     {
         $this->method = strtoupper($method);
 
         $this->spoofMethod = in_array($this->method, ['PUT', 'PATCH', 'DELETE']);
+
+        if($files) {
+            $this->enctype = 'multipart/form-data';
+        }
     }
 
     /**

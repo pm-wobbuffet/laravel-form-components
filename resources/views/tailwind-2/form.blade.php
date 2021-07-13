@@ -1,4 +1,5 @@
-<form method="{{ $spoofMethod ? 'POST' : $method }}" {!! $attributes !!}>
+<form method="{{ $spoofMethod ? 'POST' : $method }}" @if($enctype !== '') enctype="{{$enctype}}" @endif
+{!! $attributes !!}>
 @unless(in_array($method, ['HEAD', 'GET', 'OPTIONS']))
     @csrf
 @endunless
