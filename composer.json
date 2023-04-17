@@ -27,7 +27,7 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "illuminate/support": "^7.22.4 || ^8.0 || ^9.5",
+        "illuminate/support": "^7.22.4 || ^8.0 || ^9.5 || ^10.0",
         "symfony/http-foundation": "^6.0"
     },
     "require-dev": {
